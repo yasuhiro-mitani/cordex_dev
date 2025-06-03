@@ -10,6 +10,7 @@ of those messages and prints both the summary and the individual messages.
 
 - Python 3.11 or later
 - `requests` library
+- `Flask` for the optional browser interface
 - A Microsoft Graph access token with permission to read Teams chat messages.
   Set the token in the environment variable `GRAPH_TOKEN`.
 
@@ -28,6 +29,19 @@ python teams_bot/summary_bot.py --days 1
 ```
 
 Change the `--days` option to specify how many days of messages to retrieve.
+
+### In the browser
+
+You can also start a small web server that exposes the same functionality
+through a browser. Run:
+
+```bash
+python teams_bot/webapp.py
+```
+
+Open your browser at `http://localhost:8000/` to see the summary.
+You can add a `days` query parameter to change how many days of
+messages to fetch, e.g. `http://localhost:8000/?days=3`.
 
 ## Notes
 
