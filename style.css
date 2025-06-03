@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+.timer {
+  font-size: 3em;
+  margin: 20px 0;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  background: #007BFF;
+  color: white;
+}
+
+.controls button:active {
+  background: #0056b3;
+}
