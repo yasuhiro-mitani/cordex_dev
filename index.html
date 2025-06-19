@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pomodoro Timer</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>AZ-900 試験対策アプリ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Pomodoro Timer</h1>
-    <div id="timer" class="timer">25:00</div>
+    <h1>AZ-900 試験対策</h1>
+    <div class="timer-settings">
+      <input type="number" id="timerInput" min="1" value="5" class="flat-input">
+      <button id="setTimerBtn" class="flat-btn">設定</button>
+      <button class="flat-btn preset-btn" data-min="5">5分</button>
+      <button class="flat-btn preset-btn" data-min="10">10分</button>
+      <button class="flat-btn preset-btn" data-min="45">45分</button>
+    </div>
+    <div class="timer" id="timerDisplay">05:00</div>
     <div class="controls">
-      <button id="start">Start</button>
-      <button id="pause">Pause</button>
-      <button id="reset">Reset</button>
+      <button id="startBtn" class="flat-btn">開始</button>
+      <button id="stopBtn" class="flat-btn">停止</button>
+      <button id="resetBtn" class="flat-btn">リセット</button>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
